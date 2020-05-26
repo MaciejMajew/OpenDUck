@@ -1,0 +1,30 @@
+# PRMTOP file with solvated system
+prmtop =	system_solv.prmtop
+
+# Coordinate file of solvated system
+inpcrd =	system_solv.inpcrd
+
+# Indexes of key interaction from solvated system
+key_int =	344, 530
+
+# Trajectory saving frequeancy, if 0 then no trajectory generated
+MD_traj_frames =	0
+SMD_traj_frames =	0
+
+# Maximal number of SMD runs
+max_SMD_runs =	10
+
+# Wqb threshold, recommended 4-6 kcal/mol
+Wqb_thresh [kcal/mol] =	4
+
+# Lenght of MDs inbetween SMDs in ns, recomended 1 ns 
+MD_len [ns] =	1
+
+# Initial distance between the chunk atom an minimum of potential in A, recommended 2.5 A
+SMD_dist_start [A] = 	2.5
+
+# End distance between the the chunk atom an minimum of potential in A, recommended 5.0 A
+SMD_dist_end [A] = 	5.0
+
+# Spring constant, recommended 50 kcal/(mol*A^2)
+k_str [kcal/(mol*A^2)] =	50
